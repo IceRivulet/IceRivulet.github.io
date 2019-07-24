@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" >
+      function checkHash() {
+      	var h=location.hash.split(":");
+      	if(h.length>=2){
+      		switch(h[0]) {
+      			case "#p":
+      				window.location.href="http://sinriv.com/psg"+h[1];
+      			break;
+      			case "#n":
+      				window.location.href="http://sinriv.com/node"+h[1];
+      			break;
+      			default:
+      				window.location.href="http://sinriv.com/";
+      			break;
+      		}
+      	}
+      }
+      window.onload=checkHash;
+    </script>
+  </head>
+  <body>
+  
+  </body>
+</html>
